@@ -8,10 +8,12 @@ import {Social} from '../../config/caracteristicas.json';
           <div>
             <div class="flex-line"/>
             <div class="container-display">
-              <p class="info-container"> Copyright 2024 Cloud360 Internacional Corp</p>
-              <p class="info-container">Address: Orlando, FL 32804, 1317 edgewater Dr 7413</p>
-              <p class="info-container">Francisco Andrade</p>
-              <p class="info-container">francisco.andrade@cloud360int.com</p>
+              <div class="contact-info">
+                <p class="info-container"> Copyright 2024 Cloud360 Internacional Corp</p>
+                <p class="info-container">Address: Orlando, FL 32804, 1317 Edgewater Dr 7413</p>
+                <p class="info-container">Francisco Andrade</p>
+                <p class="info-container">francisco.andrade@cloud360int.com</p>
+              </div>
               <div class="icons-container">
                 {Social.map((social) => (
                   <a href={social.href}>
@@ -51,9 +53,13 @@ import {Social} from '../../config/caracteristicas.json';
   }
   .container-display{
     display: flex;
-    flex-direction: column;
     justify-content: space-between;
   }
+  .contact-info{
+    display: flex;
+    flex-direction: column;
+  } 
+
   .flex-line{
     margin-bottom: 20px;
     height: 2px;
